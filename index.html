@@ -3,115 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GM クラス 演習課題</title>
+    <title>GMクラスWebサイト選抜総選挙</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#page-1">Page 1</a></li>
-                <li><a href="#page-2">Page 2</a></li>
-                <li><a href="https://forms.gle/httseYeRihJeKvL89">投票</a></li>
+                <li><a href="https://kazuki-kittaka.github.io/gm1.ivy.github.io/">ホーム</a></li>
+                <li><a href="https://forms.gle/ETnkXYPtW2u2YpzU6">投票</a></li>
+                <li><a href="https://kazuki-kittaka.github.io/hiaimscs1.ivy.github.io/">HIAIMSCSクラス</a>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>GM クラス 演習課題</h1>
-        <button class="vote-button"><a herf="https://forms.gle/httseYeRihJeKvL89">投票</a></button>
+        <h1>GM1クラス<br>Webサイト選抜総選挙</h1>
+        <a href="https://forms.gle/httseYeRihJeKvL89" class="vote-button">投票</a>
+        <div class="pagination">
+            <button class="page-button" id="button-1" onclick="showPage(1)">1</button>
+            <button class="page-button" id="button-2" onclick="showPage(2)">2</button>
+        </div>
         <div class="page" id="page-1">
             <section class="grid-container">
             <!-- Repeat this block for each item (total 15 items) -->
              <div class="grid-item">
                 <div class="image-placeholder">
-                    <img src="img\oitacamp.png"width = 280px hight="auto">
+                    <img src="img/okashinokashi.png"width = 280px hight="auto">
                 </div>
-                <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                <p>【No.1】 お菓子のかし</p>
+                <a href="https://kirasayaka.github.io/kirasayaka.ivy.github.io/" class="link-button">リンクはこちら</a>
+                 </div>
+            <div class="grid-item">
+                <div class="image-placeholder">
+                    <img src="img/soranokoto.png"width = 280px hight="auto">
+                </div>
+                <p>【No.2】 空のこと</p>
+                <a href="https://mikukobayasi.github.io/miku.ivy.gihub.io/" class="link-button">リンクはこちら</a>
             </div>
             <div class="grid-item">
                 <div class="image-placeholder">
-                    <img src="img\oitacamp.png"width = 280px hight="auto">
+                    <img src="img/sukinakoto.png"width = 280px hight="auto">
                 </div>
-                <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                <p>【No.3】 自分の好きなこと</p>
+                <a href="https://nozawarikiya.github.io/nozawa.ivy.github.io/" class="link-button">リンクはこちら</a>
             </div>
             <div class="grid-item">
                 <div class="image-placeholder">
-                    <img src="img\oitacamp.png"width = 280px hight="auto">
+                    <img src="img/bokaroid.png"width = 280px hight="auto">
                 </div>
-                <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
-            </div>
-            <div class="grid-item">
-                <div class="image-placeholder">
-                    <img src="img\oitacamp.png"width = 280px hight="auto">
-                </div>
-                <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                <p>【No.4】 ボーカロイドについて</p>
+                <a href="https://noamattya.github.io/noamattya-ivy-github-io/" class="link-button">リンクはこちら</a>
             </div>          
             <div class="grid-item">
                 <div class="image-placeholder">
-                    <img src="img\oitacamp.png"width = 280px hight="auto">
+                    <img src="img/sukinamono_kimoto.png"width = 280px hight="auto">
                 </div>
-                <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                <p>【No.5】 私の好きなもの</p>
+                <a href="https://takeru-kimoto.github.io/takeru-kimoto.ivy.github.io/" class="link-button">リンクはこちら</a>
             </div>
              <div class="grid-item">
                 <div class="image-placeholder">
-                    <img src="img\oitacamp.png"width = 280px hight="auto">
+                    <img src="img/jyojyo.png"width = 280px hight="auto">
                 </div>
-                <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                <p>【No.6】 HIGUCHI/ジョジョの奇妙な冒険</p>
+                <a href="https://gogohiguchi.github.io/jojohiguti.ivy.github.io/" class="link-button">リンクはこちら</a>
             </div>
             <div class="grid-item">
                 <div class="image-placeholder">
                     <img src="img\oitacamp.png"width = 280px hight="auto">
                 </div>
-                <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                <p>No.7 サイト名</p>
+                <a href="#" class="link-button">リンクはこちら</a>
             </div>
             <div class="grid-item">
                 <div class="image-placeholder">
                     <img src="img\oitacamp.png"width = 280px hight="auto">
                 </div>
-                <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                <p>No.8 サイト名</p>
+                <a href="#" class="link-button">リンクはこちら</a>
             </div>
             <div class="grid-item">
                 <div class="image-placeholder">
                     <img src="img\oitacamp.png"width = 280px hight="auto">
                 </div>
-                <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                <p>No.9 サイト名</p>
+                <a href="#" class="link-button">リンクはこちら</a>
             </div>
             <div class="grid-item">
                 <div class="image-placeholder">
                     <img src="img\oitacamp.png"width = 280px hight="auto">
                 </div>
-                <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                <p>No.10 サイト名</p>
+                <a href="#" class="link-button">リンクはこちら</a>
             </div>
             <div class="grid-item">
                 <div class="image-placeholder">
                     <img src="img\oitacamp.png"width = 280px hight="auto">
                 </div>
-                <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                <p>No.11 サイト名</p>
+                <a href="#" class="link-button">リンクはこちら</a>
             </div>
             <div class="grid-item">
                 <div class="image-placeholder">
                     <img src="img\oitacamp.png"width = 280px hight="auto">
                 </div>
-                <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                <p>No.12 サイト名</p>
+                <a href="#" class="link-button">リンクはこちら</a>
             </div>
             <div class="grid-item">
                 <div class="image-placeholder">
                     <img src="img\oitacamp.png"width = 280px hight="auto">
                 </div>
-                <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                <p>No.13 サイト名</p>
+                <a href="#" class="link-button">リンクはこちら</a>
             </div>
             <div class="grid-item">
                 <div class="image-placeholder">
                     <img src="img\oitacamp.png"width = 280px hight="auto">
                 </div>
-                <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                <p>No.14 サイト名</p>
+                <a href="#" class="link-button">リンクはこちら</a>
             </div>
             <div class="grid-item">
                 <div class="image-placeholder">
                     <img src="img\oitacamp.png"width = 280px hight="auto">
                 </div>
-                <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                <p>No.15 サイト名</p>
+                <a href="#" class="link-button">リンクはこちら</a>
             </div>
             <!-- Example block ends -->
          </section>
@@ -123,85 +141,106 @@
                     <div class="image-placeholder">
                         <img src="img\oitacamp.png"width = 280px hight="auto">
                     </div>
-                    <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                    <p>No.16 サイト名</p>
+                    <a href="#" class="link-button">リンクはこちら</a>
                 </div>
                 <div class="grid-item">
                     <div class="image-placeholder">
                         <img src="img\oitacamp.png"width = 280px hight="auto">
                     </div>
-                    <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                    <p>No.17 サイト名</p>
+                    <a href="#" class="link-button">リンクはこちら</a>
                 </div>
                 <div class="grid-item">
                     <div class="image-placeholder">
                         <img src="img\oitacamp.png"width = 280px hight="auto">
                     </div>
-                    <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                    <p>No.18 サイト名</p>
+                    <a href="#" class="link-button">リンクはこちら</a>
                 </div>
                 <div class="grid-item">
                     <div class="image-placeholder">
                         <img src="img\oitacamp.png"width = 280px hight="auto">
                     </div>
-                    <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                    <p>No.19 サイト名</p>
+                    <a href="#" class="link-button">リンクはこちら</a>
                 </div>          
                 <div class="grid-item">
                     <div class="image-placeholder">
                         <img src="img\oitacamp.png"width = 280px hight="auto">
                     </div>
-                    <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                    <p>No.20 サイト名</p>
+                    <a href="#" class="link-button">リンクはこちら</a>
                 </div>
                  <div class="grid-item">
                     <div class="image-placeholder">
                         <img src="img\oitacamp.png"width = 280px hight="auto">
                     </div>
-                    <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                    <p>No.21 サイト名</p>
+                    <a href="#" class="link-button">リンクはこちら</a>
                 </div>
                 <div class="grid-item">
                     <div class="image-placeholder">
                         <img src="img\oitacamp.png"width = 280px hight="auto">
                     </div>
-                    <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                    <p>No.22 サイト名</p>
+                    <a href="#" class="link-button">リンクはこちら</a>
                 </div>
                 <div class="grid-item">
                     <div class="image-placeholder">
                         <img src="img\oitacamp.png"width = 280px hight="auto">
                     </div>
-                    <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                    <p>No.23 サイト名</p>
+                    <a href="#" class="link-button">リンクはこちら</a>
                 </div>
                 <div class="grid-item">
                     <div class="image-placeholder">
                         <img src="img\oitacamp.png"width = 280px hight="auto">
                     </div>
-                    <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                    <p>No.24 サイト名</p>
+                    <a href="#" class="link-button">リンクはこちら</a>
                 </div>
                 <div class="grid-item">
                     <div class="image-placeholder">
                         <img src="img\oitacamp.png"width = 280px hight="auto">
                     </div>
-                    <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                    <p>No.25 サイト名</p>
+                    <a href="#" class="link-button">リンクはこちら</a>
                 </div>
                 <div class="grid-item">
                     <div class="image-placeholder">
                         <img src="img\oitacamp.png"width = 280px hight="auto">
                     </div>
-                    <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                    <p>No.26 サイト名</p>
+                    <a href="#" class="link-button">リンクはこちら</a>
                 </div>
                 <div class="grid-item">
                     <div class="image-placeholder">
                         <img src="img\oitacamp.png"width = 280px hight="auto">
                     </div>
-                    <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                    <p>No.27 サイト名</p>
+                    <a href="#" class="link-button">リンクはこちら</a>
                 </div>
                 <div class="grid-item">
                     <div class="image-placeholder">
                         <img src="img\oitacamp.png"width = 280px hight="auto">
                     </div>
-                    <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                    <p>No.28 サイト名</p>
+                    <a href="#" class="link-button">リンクはこちら</a>
                 </div>
                 <div class="grid-item">
                     <div class="image-placeholder">
                         <img src="img\oitacamp.png"width = 280px hight="auto">
                     </div>
-                    <p>大分のキャンプ情報を掲載しています！<br><a href="">リンクはこちら</a></p>
+                    <p>No.29 サイト名</p>
+                    <a href="#" class="link-button">リンクはこちら</a>
+                </div>
+                <div class="grid-item">
+                    <div class="image-placeholder">
+                        <img src="img\oitacamp.png"width = 280px hight="auto">
+                    </div>
+                    <p>No.30 サイト名</p>
+                    <a href="#" class="link-button">リンクはこちら</a>
                 </div>
             </section>
         </div>
