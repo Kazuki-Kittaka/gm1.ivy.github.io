@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2カラムレイアウト</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "left right"
+                "footer footer";
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr 1fr;
+            height: 100vh;
+        }
+        header {
+            grid-area: header;
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .left-column {
+            grid-area: left;
+            background-color: #add8e6;
+            padding: 20px;
+        }
+        .right-column {
+            grid-area: right;
+            background-color: #ffcccb;
+            padding: 20px;
+        }
+        footer {
+            grid-area: footer;
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>ヘッダー</header>
+        <div class="left-column"></div>
+        <div class="right-column"></div>
+        <footer>フッター</footer>
+    </div>
+</body>
+</html>
